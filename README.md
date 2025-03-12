@@ -1,2 +1,1 @@
-# qgis_scripts
-Scripts para QGIS
+# Scripts para QGIS
