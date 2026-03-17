@@ -24,7 +24,7 @@ from qgis.core import (
 from qgis.utils import iface  # Required to access selected layers
 
 
-class ExportSelectedLayersToShp(QgsProcessingAlgorithm):
+class ExportarCamadaasSelecionadasShp(QgsProcessingAlgorithm):
     """
     Processing algorithm to export selected layers in QGIS,
     allowing the user to choose whether the output filename
@@ -134,13 +134,13 @@ class ExportSelectedLayersToShp(QgsProcessingAlgorithm):
         return "export_selected_layers"
 
     def displayName(self) -> str:
-        return "Export selected sayers to .shp"
+        return "Export selected layers to .shp"
 
     def group(self) -> str:
-        return "My Scripts"
+        return "geofausto"
 
     def groupId(self) -> str:
-        return "my_scripts"
+        return "geofausto"
 
     def shortHelpString(self) -> str:
         return (
@@ -149,4 +149,4 @@ class ExportSelectedLayersToShp(QgsProcessingAlgorithm):
         )
 
     def createInstance(self):
-        return ExportSelectedLayersToShp()
+        return ExportarCamadaasSelecionadasShp()
